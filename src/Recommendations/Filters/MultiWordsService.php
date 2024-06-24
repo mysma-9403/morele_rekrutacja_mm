@@ -9,6 +9,13 @@ use App\Recommendations\Services\StringService;
 class MultiWordsService implements RecommendationResponseInterface
 {
 
+    /**
+     * Method return multi-words movies
+     *
+     * @param FilterDTO $filterDTO
+     * @param array $data
+     * @return array
+     */
     public function filterMovies(FilterDTO $filterDTO, array $data): array
     {
         $filteredMovies = [];

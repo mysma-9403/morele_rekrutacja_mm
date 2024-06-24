@@ -8,6 +8,13 @@ use App\Recommendations\Enum\RecommendationTypesEnum;
 
 class RandomTitlesService implements RecommendationResponseInterface
 {
+    /**
+     * Method return three random movies
+     *
+     * @param FilterDTO $filterDTO
+     * @param array $data
+     * @return array
+     */
     public function filterMovies(FilterDTO $filterDTO, array $data): array
     {
         shuffle($data);
